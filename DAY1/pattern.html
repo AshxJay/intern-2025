@@ -1,0 +1,19 @@
+<div id="l"></div>
+
+<script>
+    function printPattern(rows) {
+    for (let i = 1; i <= rows; i++) {
+        let row = '';
+        for (let j = 1; j <= i; j++) {
+            row += j;
+        }
+        var h6=document.createElement('p')
+        h6.textContent = row;
+        var div=document.getElementById('l')
+        div.appendChild(h6)
+    }
+}
+
+printPattern(5);
+
+</script>
